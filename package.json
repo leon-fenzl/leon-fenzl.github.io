@@ -1,15 +1,24 @@
 {
-  "name": "Site",
+  "name": "leon-fenzl.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
   "scripts": {
-    "build-css":"tailwindcss build src/styles.css -o _layouts/styles.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-fenzl/leon-fenzl.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^2.2.7"
-  }
+  "bugs": {
+    "url": "https://github.com/leon-fenzl/leon-fenzl.github.io/issues"
+  },
+  "homepage": "https://github.com/leon-fenzl/leon-fenzl.github.io#readme"
 }
