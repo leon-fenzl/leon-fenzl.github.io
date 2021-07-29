@@ -1,15 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-@layer components{
-    .customCard{
-       @apply bg-white rounded overflow-hidden shadow-md relative;
-    }
-    
-    .customBadge{
-        @apply bg-gray-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
-    }
-}
