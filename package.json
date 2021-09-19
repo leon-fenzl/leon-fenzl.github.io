@@ -3,19 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
-  "dependencies": {
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "http-server": "^13.0.1",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.7"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server",
+    "watch": "tailwindcss -i ./src/styles/main.css -o ./dist/styles/main.css --watch",
+    "build": "NODE_ENV=production   tailwindcss -i ./src/styles/main.css -o ./dist/styles/main.css --minify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leon-fenzl/leon-fenzl.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leon Fenzl",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leon-fenzl/leon-fenzl.github.io/issues"
